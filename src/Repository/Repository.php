@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pandawa\Cycle;
+namespace Pandawa\Cycle\Repository;
 
 use Cycle\ORM\EntityManager;
 use Cycle\ORM\EntityManagerInterface;
@@ -18,7 +18,7 @@ use Throwable;
  *
  * @author   Iqbal Maulana <iq.bluejack@gmail.com>
  */
-abstract class Repository extends CycleRepository implements RepositoryContract
+class Repository extends CycleRepository implements RepositoryContract
 {
     protected EntityManagerInterface $em;
 

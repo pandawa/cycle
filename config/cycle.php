@@ -2,6 +2,7 @@
 
 use Cycle\ORM\Schema;
 use Cycle\ORM\Select\Source;
+use Pandawa\Cycle\Repository\Repository;
 
 return [
     'directories' => [
@@ -16,8 +17,9 @@ return [
             'enabled' => env('CYCLE_SCHEMA_CACHE_ENABLED', false),
         ],
         'defaults'      => [
-            Schema::SOURCE   => Source::class,
-            Schema::DATABASE => 'default',
+            Schema::DATABASE   => 'default',
+            Schema::SOURCE     => Source::class,
+            Schema::REPOSITORY => Repository::class,
         ],
         'resource_path' => base_path('src/*/*/*/Resources/schemas'),
     ],
