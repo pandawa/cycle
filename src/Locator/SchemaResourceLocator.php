@@ -31,7 +31,7 @@ final class SchemaResourceLocator implements SchemaResourceLocatorContract
         foreach (Finder::create()->files()->in($this->directory) as $file) {
             $key = $this->generateKey($file);
 
-            $schemas[$key] = $defaults + $this->loader->load($file->getRealPath());
+            $schemas[$key] = $this->loader->load($file->getRealPath()) + $defaults;
         }
 
         return $schemas;
