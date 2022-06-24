@@ -32,7 +32,7 @@ class PandawaCycleModule extends AbstractModule
     protected function build(): void
     {
         if (!$this->app->configurationIsCached()) {
-            $this->mergeConfigFrom(__DIR__ . '/../configs/cycle.php', 'cycle');
+            $this->mergeConfigFrom(__DIR__ . '/../config/cycle.php', 'cycle');
         }
 
         $this->publishes([
