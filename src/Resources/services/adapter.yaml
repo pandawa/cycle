@@ -1,0 +1,16 @@
+Pandawa\Cycle\Adapter\DatabaseConfigManager:
+  class: Pandawa\Cycle\Adapter\DatabaseConfigManager
+  arguments:
+    - "#CycleConfigAdapter"
+
+Pandawa\Cycle\Adapter\SQLiteConfigAdapter:
+  class: Pandawa\Cycle\Adapter\SQLiteConfigAdapter
+  tag: CycleConfigAdapter
+
+Pandawa\Cycle\Adapter\MySQLConfigAdapter:
+  class: Pandawa\Cycle\Adapter\MySQLConfigAdapter
+  tag: CycleConfigAdapter
+
+Pandawa\Cycle\Adapter\PostgresConfigAdapter:
+  class: Pandawa\Cycle\Adapter\PostgresConfigAdapter
+  tag: CycleConfigAdapter

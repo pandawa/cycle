@@ -1,0 +1,40 @@
+{
+    "name": "pandawa/cycle",
+    "description": "Cycle ORM implementation for pandawa",
+    "keywords": [
+        "laravel",
+        "pandawa",
+        "cycle",
+        "orm"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Iqbal Maulana",
+            "email": "iq.bluejack@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "pandawa/pandawa": "^4.0",
+        "cycle/annotated": "^3.1",
+        "cycle/entity-behavior-uuid": "^1.0",
+        "cycle/orm": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pandawa\\Cycle\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Pandawa\\Cycle\\PandawaCycleModule"
+            ]
+        }
+    }
+}
